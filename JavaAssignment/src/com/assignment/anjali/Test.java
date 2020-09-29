@@ -7,4 +7,5 @@ public class Test {
 
 	}
 
+	static void show() {}
 }
