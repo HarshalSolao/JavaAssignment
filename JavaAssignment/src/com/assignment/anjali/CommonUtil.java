@@ -7,4 +7,10 @@ public class CommonUtil implements CommonUtilInterface{
 
 	}
 
+	@Override
+	public boolean isEmpty(String str) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
 }
