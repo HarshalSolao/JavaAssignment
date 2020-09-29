@@ -1,9 +1,9 @@
 package com.assignment.harshal;
 
-public class Demo {
+public class TestDemo {
 
 	public static void main(String[] args) {
-		System.out.println("Hello World Thanks");
+		// TODO Auto-generated method stub
 
 	}
 
