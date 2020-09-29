@@ -9,10 +9,9 @@ public class CommonUtil implements CommonUtilInterface{
 
 	@Override
 	public boolean isEmpty(String str) {
-		if(null != str || !str.isEmpty()) {
-			return false;
-		}
-		return true;
+		if(str.isEmpty())
+			return true;
+		return false;
 	}
 
 }
