@@ -43,7 +43,7 @@ public class Collection_SetDemo {
 		}
 		
 		stu.remove(stu2);
-		System.out.println("Updated Student list is: ");
+		System.out.println("Updated Student list now is: ");
 		for(Student stu4: stu) {
 			System.out.println(stu4);
 		}
