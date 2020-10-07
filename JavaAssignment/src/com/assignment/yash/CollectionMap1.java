@@ -20,6 +20,7 @@ public class CollectionMap1 {
 	 System.out.println(hs); 
 	 hs.remove("Rohit"); 
 	 System.out.println(hs); 
+	 System.out.println("Using student class");
 		HashMap<Student,String>hs1=new HashMap<>();
 	   Student s1=new Student(12,"Ram"); 
 	   Student s2=new Student(43,"xi"); 
