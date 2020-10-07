@@ -2,6 +2,7 @@ package com.assignment.harshal;
 
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -24,10 +25,21 @@ public class CollectionDemo {
 		HashSet<Integer> set = new HashSet<>();
 		set.addAll(arrList);
 		
-		for (Integer integer : set) {
-			System.out.println(integer);
+		/*
+		 * for (Integer integer : set) { System.out.println(integer); }
+		 */
+		
+		Iterator<Integer> it = arrList.iterator();
+		while(it.hasNext()) {
+			Integer a = it.next();
+			if(a < 25) {
+				it.remove();
+			}
 		}
 		
+		for (Integer integer : arrList) {
+			System.out.println(" Value : " + integer);
+		}
 		
 		System.out.println("-================================");
 		
