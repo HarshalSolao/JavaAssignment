@@ -24,7 +24,7 @@ public class CollectionMap {
 	 System.out.println("Size of Hashmap is :"+" "+hs.size());
 	 System.out.println();
 	
-	 System.out.println("Using student class :");
+	 System.out.println(" student class :");
 	 System.out.println();	
 	
 	 HashMap<Student,String>hs1=new HashMap<>();
