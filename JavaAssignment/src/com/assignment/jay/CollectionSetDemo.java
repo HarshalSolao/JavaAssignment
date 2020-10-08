@@ -8,7 +8,7 @@ public class CollectionSetDemo {
 	public static void main(String[] args) {
  
 		HashSet<Integer> set = new HashSet<>();
-		set.add(11);
+		set.add(11);   
 		set.add(15);
 		set.add(21);
 		set.add(25);

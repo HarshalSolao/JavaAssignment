@@ -6,7 +6,7 @@ import java.util.HashSet;
 public class CollectionDemo {
 
 	public static void main(String[] args) {
-int arr[] = new int[10];
+int arr[] = new int[10];   
 
 ArrayList<Integer> arrList = new ArrayList<>();
 arrList.add(65);
