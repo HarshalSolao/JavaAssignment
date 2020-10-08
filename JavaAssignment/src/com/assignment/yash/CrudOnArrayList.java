@@ -46,7 +46,7 @@ public class CrudOnArrayList {
 				System.exit(0);
 				break;
 			default:
-				System.out.println("Please enter valid operation.");
+				System.out.println("Please Enter valid operation.");
 				break;
 
 			}  }
