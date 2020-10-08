@@ -182,7 +182,7 @@ if(student.size()==0) {
 		System.out.println("Press 2 for Search Student");
 		System.out.println("Press 3 for Update Student");
 		System.out.println("Press 4 for Delete Student"); 
-		System.out.println("Press 5 for search"); 
+		System.out.println("Press 5 for search In list"); 
 		System.out.println("Press 6 for Exit");
 		System.out.println("================================================");
 	  	operation = in.nextInt();
