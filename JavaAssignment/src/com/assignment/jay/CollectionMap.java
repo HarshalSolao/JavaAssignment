@@ -48,7 +48,7 @@ public class CollectionMap {
 		for (String i : freinds.keySet()) {
 			  System.out.println("key: " + i + " value: " + freinds.get(i));
 			}
-	
+
 	//create new map	
 		HashMap<String, Integer> deta = new HashMap<String, Integer>();
 		
