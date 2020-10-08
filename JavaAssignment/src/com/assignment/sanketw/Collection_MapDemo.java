@@ -1,6 +1,8 @@
 package com.assignment.sanketw;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 import com.assignment.utility.Student;
 
@@ -44,6 +46,36 @@ public class Collection_MapDemo {
 		System.out.println("Student list is:");
 		for (String data3 : col.keySet()) {
 			System.out.println(data3);
+		}
+
+		System.out.println("-----------------------------------");
+		HashMap<String, List<Student>> studentMap = new HashMap<>();
+		Student stu1 = new Student(1001, "Mohit");
+		Student stu2 = new Student(1002, "Rohit");
+		Student stu3 = new Student(1003, "Soham");
+
+		List<Student> stuList = new ArrayList<>();
+		stuList.add(stu1);
+		stuList.add(stu2);
+		stuList.add(stu3);
+
+		studentMap.put("Section B", stuList);
+
+		Student stu4 = new Student(1004, "Virat");
+		Student stu5 = new Student(1005, "Mahendra");
+		Student stu6 = new Student(1006, "Nikhil");
+
+		List<Student> stuListB = new ArrayList<>();
+		stuListB.add(stu6);
+		stuListB.add(stu4);
+		stuListB.add(stu5);
+
+		studentMap.put("Section C", stuListB);
+
+		for (String str : studentMap.keySet()) {
+			for (Student student : studentMap.get(str)) {
+				System.out.println(str + " " + student);
+			}
 		}
 
 	}

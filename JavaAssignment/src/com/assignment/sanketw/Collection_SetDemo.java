@@ -49,13 +49,14 @@ public class Collection_SetDemo {
 			System.out.println(stu4);
 		}
 
+		System.out.println("---------------------------");
 		Iterator<Integer> it = set.iterator();
-		if (it.hasNext()) {
-			System.out.println(it.next());
-		} else {
-			it.remove();
-			System.out.println(it);
+		while (it.hasNext()) {
+			Integer i = it.next();
+			if (i < 50) {
+				it.remove();
+			}
 		}
+		System.out.println(set);
 	}
-
 }
