@@ -301,18 +301,20 @@ public class CrudOnArrayList {
 			System.out.println(" Ignore below message and please enter name in words  only");
 		}
 
-		for (int i = 0; i < student.size(); i++) {
-			if (null != student.get(i)) {
-				if (student.get(i).getId() == id && student.get(i).getName().equalsIgnoreCase(name)) {
-					f = true;
-					System.out.println("Record found with id :" + student.get(i).getId() + " " + "Name :"
-							+ student.get(i).getName());
-
-					System.out.println();
-				}
-			}
+		/*
+		 * for (int i = 0; i < student.size(); i++) { if (null != student.get(i)) { if
+		 * (student.get(i).getId() == id &&
+		 * student.get(i).getName().equalsIgnoreCase(name)) { f = true;
+		 * System.out.println("Record found with id :" + student.get(i).getId() + " " +
+		 * "Name :" + student.get(i).getName());
+		 * 
+		 * System.out.println(); } } }
+		 */
+		Student stu = new Student(id, name);
+		if(student.contains(stu)) {
+			System.out.println(stu);
 		}
-
+		
 		if (f == false) {
 			System.out.println("No record with id :" + id + " " + "Name :" + name);
 			System.out.println();

@@ -102,15 +102,14 @@ public class CrudonArraylist {
 		                name = in.next();
 		                System.out.println("Please enter the Id:");
 		                id = in.nextInt();
-		                Student stu = new Student();
-		                stu.setId(id);
-		                stu.setName(name);
-		                if (stu.getId() == id && stu.getName().equalsIgnoreCase(name)) {
-		                    System.out.println(stu);
-		                } else {
-		                    System.out.println("No student found with id : " + id);
-		                    System.out.println();
+		                Student student= new Student();
+		                student.setId(id);
+		                student.setName(name);
+		                
+		                if(students.contains(student)) {
+		                	System.out.println(student);
 		                }
+		               
 		                System.out.println();
 		                break;
 		          

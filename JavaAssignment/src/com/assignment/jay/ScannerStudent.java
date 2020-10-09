@@ -57,6 +57,7 @@ public class ScannerStudent {
 			if (null != students.get(i)) {
 				if (students.get(i).getId() == id) {
 //					students = null;
+					students.remove(students.get(i));
 					System.out.println("Student deleted having id : " + id);
 					System.out.println();
 				}
@@ -116,6 +117,7 @@ public class ScannerStudent {
 			for (Student stu : students) {
 				if (stu.getName().equalsIgnoreCase(name)) {
 					System.out.println("Record found by Name : " + " " + stu.getName() );
+					break;
 				}else {
 					System.out.println("Please provide valid Name");
 				}
