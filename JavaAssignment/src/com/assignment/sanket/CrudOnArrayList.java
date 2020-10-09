@@ -203,7 +203,7 @@ public class CrudOnArrayList {
 
 	}
 
-	public void getWelcomeData() {
+	public void getWelcomeData()  {
 
 		System.out.println("======================================================");
 		System.out.println("Please select any operation :");
@@ -213,8 +213,10 @@ public class CrudOnArrayList {
 		System.out.println("Press 4 to delete student");
 		System.out.println("Press 5 to exit");
 		System.out.println("======================================================");
-
 		operation = in.nextInt();
+	
+	
+		
 	}
 
 	public void getSearchData() {
