@@ -1,4 +1,4 @@
-package com.assignment.utility;
+package com.assignment.entity;
 
 public class Student {
 

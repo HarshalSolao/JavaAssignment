@@ -2,7 +2,7 @@ package com.assignment.sanket;
 
 import java.util.HashMap;
 
-import com.assignment.utility.Student;
+import com.assignment.entity.Student;
 
 public class CollectionMap {
 

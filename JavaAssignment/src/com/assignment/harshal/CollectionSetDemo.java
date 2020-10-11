@@ -3,7 +3,7 @@ package com.assignment.harshal;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
 
-import com.assignment.utility.Student;
+import com.assignment.entity.Student;
 
 public class CollectionSetDemo {
 

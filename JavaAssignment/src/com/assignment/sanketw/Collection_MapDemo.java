@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-import com.assignment.utility.Student;
+import com.assignment.entity.Student;
 
 public class Collection_MapDemo {
 
