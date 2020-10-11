@@ -1,0 +1,6 @@
+A6 ~~ Audi ~~ 2015 ~~ Red
+Alto ~~ Maruti Suzuki ~~ 1999 ~~ Blue
+Verna ~~ Hyudai ~~ 2015 ~~ White
+City ~~ Honda ~~ 2015 ~~ Red
+Creta ~~ Hyudai ~~ 2015 ~~ Green
+Dzire ~~ Maruti Suzuki ~~ 2011 ~~ White
