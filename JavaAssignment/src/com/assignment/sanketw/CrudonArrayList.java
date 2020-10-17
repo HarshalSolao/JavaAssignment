@@ -69,7 +69,7 @@ public class CrudonArrayList {
 
 		if (!flag) {
 			System.out.println("No record with id : " + id);
-			System.out.println();
+			System.out.println(); 
 		}
 
 	}
