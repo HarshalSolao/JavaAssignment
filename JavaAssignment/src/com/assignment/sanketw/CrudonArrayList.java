@@ -59,8 +59,7 @@ public class CrudonArrayList {
 			if (students.size() != 0) {
 				if (students.get(i).getId() == id) {
 					flag = true;
-					students.remove(i);
-
+					students.remove(students.get(i));
 					System.out.println("Student deleted successfully");
 					System.out.println();
 
@@ -112,45 +111,62 @@ public class CrudonArrayList {
 		// Search all press 3
 		// After taking input perform action
 		System.out.println(
-				"Please press : 1 to search by name, 2 to search by Id, 3 to search by all and 4 to print data of all students");
+				"Please press to search for Student : 1 to search by name, 2 to search by Id, 3 to search by all and 4 to print data of all students");
 		search = in.nextInt();
 
 		switch (search) {
 		case 1:
-			System.out.println("Please enter the name:");
+			System.out.println("Please enter the name of Student:");
 			name = in.next();
+			boolean flag = false;
 			for (Student stu : students) {
 				if (stu.getName().equalsIgnoreCase(name)) {
+					flag = true;
+					System.out.println("Student found in Record: ");
 					System.out.println(stu);
 				}
 			}
+			if (!flag) {
+				System.out.println("No student found with name : " + name);
+			}
+			System.out.println();
 			break;
 		case 2:
-			System.out.println("Please enter the Id:");
+			System.out.println("Please enter the Id of Student:");
 			id = in.nextInt();
+			boolean flag1 = false;
 			for (Student stu : students) {
 				if (stu.getId() == id) {
+					flag1 = true;
+					System.out.println("Student found in Record: ");
 					System.out.println(stu);
 				}
 			}
+			if (!flag1) {
+				System.out.println("No student found with id : " + id);
+			}
+			System.out.println();
 			break;
 		case 3:
 			System.out.println("Please enter the name:");
 			name = in.next();
 			System.out.println("Please enter the Id:");
 			id = in.nextInt();
+
 			Student stu = new Student();
 			stu.setId(id);
 			stu.setName(name);
-			if (stu.getId() == id && stu.getName().equalsIgnoreCase(name)) {
+			if (students.contains(stu)) {
+				System.out.println("Student found in Record: ");
 				System.out.println(stu);
 			} else {
-				System.out.println("No student found with id : " + id);
+				System.out.println("No student found with id : " + id + " and Name : " + name);
 				System.out.println();
 			}
 			System.out.println();
 			break;
 		case 4:
+			System.out.println("Students Record is: ");
 			System.out.println(students);
 			break;
 		default:
