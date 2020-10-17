@@ -6,7 +6,7 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
-import com.assignment.utility.Student;
+import com.assignment.entity.Student;
 
 public class CollectionDemo {
 

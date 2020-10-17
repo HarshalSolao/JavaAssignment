@@ -7,7 +7,7 @@ package com.assignment.arjun;
 import java.util.ArrayList;
 import java.util.HashSet;
 
-import com.assignment.utility.Student;
+import com.assignment.entity.Student;
 public class DemoClass{
 
     public static void main(String[] args) {

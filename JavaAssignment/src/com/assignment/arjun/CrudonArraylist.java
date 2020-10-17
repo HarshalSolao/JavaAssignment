@@ -3,7 +3,7 @@ package com.assignment.arjun;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import com.assignment.utility.Student;
+import com.assignment.entity.Student;
 
 public class CrudonArraylist {
     Scanner in = new Scanner(System.in);

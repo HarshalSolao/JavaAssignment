@@ -2,8 +2,7 @@ package com.assignment.yash;
 
 import java.util.HashMap;
 
-
-import com.assignment.utility.Student;
+import com.assignment.entity.Student;
 
 public class CollectionMap1 {
 

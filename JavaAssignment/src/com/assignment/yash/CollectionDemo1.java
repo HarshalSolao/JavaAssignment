@@ -3,7 +3,7 @@ package com.assignment.yash;
 import java.util.ArrayList;
 import java.util.HashSet;
 
-import com.assignment.utility.Student;
+import com.assignment.entity.Student;
 
 public class CollectionDemo1 {
 

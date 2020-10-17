@@ -2,7 +2,8 @@ package com.assignment.sanket;
 
 import java.util.ArrayList;
 import java.util.Scanner;
-import com.assignment.utility.Student;
+
+import com.assignment.entity.Student;
 
 public class CrudOnArrayList {
 	Scanner in = new Scanner(System.in);

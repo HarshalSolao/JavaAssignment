@@ -2,7 +2,8 @@ package com.assignment.yash;
 
 import java.util.ArrayList;
 import java.util.Scanner;
-import com.assignment.utility.*;
+
+import com.assignment.entity.Student;
 
 public class CrudOnArrayList {
 
