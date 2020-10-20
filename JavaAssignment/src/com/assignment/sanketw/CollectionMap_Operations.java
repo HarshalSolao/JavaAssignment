@@ -27,7 +27,7 @@ public class CollectionMap_Operations {
 		System.out.println("=================================================================================");
 
 		System.out.println("To print data of cars according to LaunchYear");
-		Map<Integer, List<Car>> map = new HashMap<>();
+		Map<Integer, List<Car>> map = new HashMap<>();   
 
 		for (Car car : cars) {
 			if (map.containsKey(car.getLaunchYear())) {
