@@ -5,7 +5,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class CrudonHashset {
-	Scanner in = new Scanner(System.in);
+	Scanner in = new Scanner(System.in);  
 	HashSet<Student> students = new HashSet<>();
 	int id;
 	String name;
