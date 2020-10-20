@@ -6,10 +6,10 @@ public class Car {
 	private String brandName;
 	private int launchYear;
 	private String color;
-	
+
 	public Car() {
 	}
-	
+
 	public Car(String carName, String brandName, int launchYear, String color) {
 		this.carName = carName;
 		this.brandName = brandName;
@@ -75,11 +75,7 @@ public class Car {
 		if (getClass() != obj.getClass())
 			return false;
 		Car other = (Car) obj;
-		if (brandName == null) {
-			if (other.brandName != null)
-				return false;
-		} else if (!brandName.equals(other.brandName))
-			return false;
+		
 		if (carName == null) {
 			if (other.carName != null)
 				return false;
@@ -94,5 +90,6 @@ public class Car {
 			return false;
 		return true;
 	}
+
 	
 }
