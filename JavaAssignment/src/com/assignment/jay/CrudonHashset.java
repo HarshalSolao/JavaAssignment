@@ -9,7 +9,7 @@ public class CrudonHashset {
 	HashSet<Student> students = new HashSet<>();
 	int id;
 	String name;
-	int operation;
+	int operation;  
 	int search;
 
 	public static void main(String[] args) {
