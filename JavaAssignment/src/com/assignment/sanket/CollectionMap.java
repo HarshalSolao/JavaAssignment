@@ -14,9 +14,14 @@ public class CollectionMap {
         hs.put("Jam",72); 
         hs.put("Ravan",49); 
         hs.put("Krishna",21); 
-   	 System.out.println(hs);
+        hs.put("Krishna",25); 
+        System.out.println(hs);
    	 System.out.println();
 	 
+   	 
+   	 
+   	 
+   	 
    	 hs.remove("Jam", 72) ;
 	 System.out.println(hs);
 	 System.out.println();
