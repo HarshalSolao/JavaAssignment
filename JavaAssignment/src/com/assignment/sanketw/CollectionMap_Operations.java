@@ -27,7 +27,7 @@ public class CollectionMap_Operations {
 		System.out.println("=================================================================================");
 
 		System.out.println("To print data of cars according to LaunchYear");
-		Map<Integer, List<Car>> map = new HashMap<>();   
+		Map<Integer, List<Car>> map = new HashMap<>();
 
 		for (Car car : cars) {
 			if (map.containsKey(car.getLaunchYear())) {
@@ -87,6 +87,35 @@ public class CollectionMap_Operations {
 			System.out.println(key + " -- " + map2.get(key));
 		}
 
-	}
+		System.out.println("=================================================================================");
 
+		System.out.println("To print data of cars according to LaunchYear and colour");
+
+		Map<Integer, Map<String, List<Car>>> map3 = new HashMap<>();
+
+		for (Car car : cars) {
+			if (map3.containsKey(car.getLaunchYear())) {
+				continue;
+			} else {
+				Map<String, List<Car>> map4 = new HashMap<>();
+				int a = car.getLaunchYear();
+
+				for (Car car1 : cars) {
+					if (map4.containsKey(car1.getColor()) && car1.getLaunchYear() == a) {
+						List<Car> list = map4.get(car1.getColor());
+						list.add(car1);
+						map4.put(car1.getColor(), list);
+					} else if (car1.getLaunchYear() == a) {
+						List<Car> list = new ArrayList<>();
+						list.add(car1);
+						map4.put(car1.getColor(), list);
+					}
+				}
+				map3.put(car.getLaunchYear(), map4);
+			}
+		}
+		for (Integer key : map3.keySet()) {
+			System.out.println(key + " -- " + map3.get(key));
+		}
+	}
 }
