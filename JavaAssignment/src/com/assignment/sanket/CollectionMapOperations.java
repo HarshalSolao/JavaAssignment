@@ -42,7 +42,7 @@ public class CollectionMapOperations {
 		}
 
 		for (Integer key : map.keySet()) {
-			System.out.println(key + " -- " + map.get(key));
+	//		System.out.println(key + " -- " + map.get(key));
 		}
 		System.out.println();
 		System.out.println("****=========  ***  On the basis of color  ***  ========****");
@@ -55,9 +55,7 @@ public class CollectionMapOperations {
 			carSet.add(car);
 		}
 
-//		for (Car car : carSet) {
-//			System.out.println(car);
-//		}
+
 
 		Map<String, List<Car>> map1 = new HashMap<>();
 
@@ -75,7 +73,7 @@ public class CollectionMapOperations {
 		}
 
 		for (String  key : map1.keySet()) {
-			System.out.println(key + " -- " + map1.get(key));
+	// 		System.out.println(key + " -- " + map1.get(key));
 		}
 
 		System.out.println();
@@ -89,9 +87,7 @@ System.out.println("****=========  ***  On the basis of Brandname  ***  ========
 			carSet2.add(car);
 		}
 
-//		for (Car car : carSet) {
-//			System.out.println(car);
-//		}
+
 
 		Map<String, List<Car>> map2 = new HashMap<>();
 
@@ -109,11 +105,44 @@ System.out.println("****=========  ***  On the basis of Brandname  ***  ========
 		}
 
 		for (String  key : map2.keySet()) {
-			System.out.println(key + " -- " + map2.get(key));
+	//		System.out.println(key + " -- " + map2.get(key));
 		}
+System.out.println();
+System.out.println("****=============  On the basis of launch year and then on color    =============****");
+// work in progress
+List<Car> cars3 = UploadFileData.readDataFromFile();
+Set<Car> carSet3 = new HashSet<>();
 
-
-		
-	}
-
+for (Car car : cars3) {
+	carSet3.add(car);
 }
+
+
+  Map<Integer,Map<String,List<Car>>>  Outer =new HashMap<>();
+	
+  Map<String,List<Car>>  Inner =new HashMap<>();
+  
+ for (Car car : carSet3) {
+	if(Outer.containsKey(car.getLaunchYear())) {
+		Map<String, List<Car>> listt =  Outer.get(car.getLaunchYear());
+		((List<Car>) listt).add(car);
+		Outer.put(car.getLaunchYear(), listt);
+		
+		 
+		 for (Car car1 : carSet3) {
+		if(Inner.containsKey(car1.getColor())) {
+			
+		}  }
+		for (Integer  key : Outer.keySet()) {
+					System.out.println(key + " -- " + Outer.get(key)+Inner.get(key));
+	}
+	 
+	 
+}
+  
+  
+  
+  
+  
+	}
+}}
