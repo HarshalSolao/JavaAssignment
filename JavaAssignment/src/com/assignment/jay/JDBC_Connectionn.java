@@ -8,7 +8,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.UUID;  
 
-
+ 
 public class JDBC_Connectionn {
 
 	public static void main(String [] args) {
