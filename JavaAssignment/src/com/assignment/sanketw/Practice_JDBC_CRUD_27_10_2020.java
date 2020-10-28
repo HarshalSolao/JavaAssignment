@@ -12,6 +12,7 @@ public class Practice_JDBC_CRUD_27_10_2020 {
 
 	public static void main(String[] args) {
 
+		
 		Connection con = null;
 		try {
 
