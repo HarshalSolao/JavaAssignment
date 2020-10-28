@@ -57,7 +57,6 @@ public class Practice_JDBC_CRUD_27_10_2020 {
 //			{
 //			System.out.println("Deleted Successfully!");
 //			}
-
 			
 			// TO PRINT STUDENT DB
 			Statement stmt = con.createStatement();
