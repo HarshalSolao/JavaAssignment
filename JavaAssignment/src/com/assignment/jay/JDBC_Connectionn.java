@@ -30,7 +30,7 @@ public class JDBC_Connectionn {
 //			String sql = "INSERT INTO student (rollNo, firstName, lastName, age, city, state) VALUES (?,?,?,?,?,?)";
 //			PreparedStatement ps = con.prepareStatement(sql);
 //			ps.setInt(1,105);
-//			ps.setString(2, "Jay");
+//			ps.setString(2, "Jay"); 
 //			ps.setString(3, "Bhakte");
 //			ps.setInt(4,19);
 //			ps.setString(5, "Amravati");
