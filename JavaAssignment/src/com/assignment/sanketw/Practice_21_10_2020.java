@@ -25,6 +25,7 @@ public class Practice_21_10_2020 {
 			System.out.println(car2);
 		}
 		System.out.println("============================================================================");
+		System.out.println();
 
 		List<String> namelist = new ArrayList<>();
 		namelist.add("Java");
