@@ -19,20 +19,20 @@ public class Practice_JDBC_CRUD_27_10_2020 {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/studentdb", "root", "Root");
 
-			// INSERT STUDENT IN DB
-			String sql = "insert into student (firstName, lastName, rollNo, age, city, state) values(?, ?, ?, ?, ?, ?)";
-			PreparedStatement ps = con.prepareStatement(sql);
-			ps.setString(1, "Rajesh");
-			ps.setString(2, "Kapse");
-			ps.setInt(3, 104);
-			ps.setInt(4, 45);
-			ps.setString(5, "Nagpur");
-			ps.setString(6, "Maharashtra");
-
-			int b = ps.executeUpdate();
-			if (b > 0) {
-				System.out.println("Added Successfully!");
-			}
+//			// INSERT STUDENT IN DB
+//			String sql = "insert into student (firstName, lastName, rollNo, age, city, state) values(?, ?, ?, ?, ?, ?)";
+//			PreparedStatement ps = con.prepareStatement(sql);
+//			ps.setString(1, "Rajesh");
+//			ps.setString(2, "Kapse");
+//			ps.setInt(3, 104);
+//			ps.setInt(4, 45);
+//			ps.setString(5, "Nagpur");
+//			ps.setString(6, "Maharashtra");
+//
+//			int b = ps.executeUpdate();
+//			if (b > 0) {
+//				System.out.println("Added Successfully!");
+//			}
 
 			// UPDATE STUDENT IN DB
 //			String sql ="update student set age=? , firstName=? where id=?";
